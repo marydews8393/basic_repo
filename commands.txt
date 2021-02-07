@@ -1,0 +1,101 @@
+Last login: Sun Feb  7 13:27:22 on ttys000
+marydews@marys-Air ~ % cd desktop
+marydews@marys-Air desktop % mkdir basic_repo
+marydews@marys-Air desktop % ls
+2021 Standhope_Sponsorship (1).pdf
+7641760F-70B4-4FEF-BBF1-DE803FE9AC2C-3750A5A8-70E2-436E-8A65-DDADE7CE2E5F.JPG
+OutdoorBoise
+Random
+Relocated Items.nosync
+Screen Shot 2021-02-06 at 5.18.47 PM.png
+Screen Shot 2021-02-06 at 5.21.10 PM.png
+Screen Shot 2021-02-06 at 5.21.26 PM.png
+basic_repo
+marydews@marys-Air desktop % echo "# basic_repor" >> README.md
+marydews@marys-Air desktop % cd basic_repo
+marydews@marys-Air basic_repo % echo "#basic_repo" >> README.md
+marydews@marys-Air basic_repo % ls
+README.md
+marydews@marys-Air basic_repo % git init
+Initialized empty Git repository in /Users/marydews/Desktop/basic_repo/.git/
+marydews@marys-Air basic_repo % git add README.md
+marydews@marys-Air basic_repo % git commit -m "first commit"
+[master (root-commit) e38990d] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+marydews@marys-Air basic_repo % git branch -M main
+marydews@marys-Air basic_repo % git remote add origin https://github.com/marydews8393/basic_repo.git
+marydews@marys-Air basic_repo % git push -u origin main
+Username for 'https://github.com': git status
+Password for 'https://git status@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/marydews8393/basic_repo.git/'
+marydews@marys-Air basic_repo % git status
+On branch main
+nothing to commit, working tree clean
+marydews@marys-Air basic_repo % git commit -m "first commit"
+On branch main
+nothing to commit, working tree clean
+marydews@marys-Air basic_repo % git add README.md
+marydews@marys-Air basic_repo % git commit -m README.md
+On branch main
+nothing to commit, working tree clean
+marydews@marys-Air basic_repo % touch styles.css
+marydews@marys-Air basic_repo % git add styles.css
+marydews@marys-Air basic_repo % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   styles.css
+
+marydews@marys-Air basic_repo % git commit -m "first commit"
+[main 946e4b2] first commit
+ 1 file changed, 4 insertions(+)
+ create mode 100644 styles.css
+marydews@marys-Air basic_repo % git status
+On branch main
+nothing to commit, working tree clean
+marydews@marys-Air basic_repo % git remote add origin https://github.com/marydews8393/basic_repo.git
+git branch -M main
+git push -u origin main
+fatal: remote origin already exists.
+Username for 'https://github.com': marydews8393
+Password for 'https://marydews8393@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 496 bytes | 165.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/marydews8393/basic_repo.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+marydews@marys-Air basic_repo % touch index.html
+marydews@marys-Air basic_repo % git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+marydews@marys-Air basic_repo % git add index.html
+marydews@marys-Air basic_repo % git commmit -m "second commit"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+marydews@marys-Air basic_repo % git commit -m "second commit"
+[main 64d412b] second commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+marydews@marys-Air basic_repo % basic_repo % git remote add origin https://github.com/marydews8393/basic_repo.git
+git branch -M main
+git push -u origin main
+zsh: command not found: basic_repo
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 458 bytes | 458.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/marydews8393/basic_repo.git
+   946e4b2..64d412b  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+marydews@marys-Air basic_repo % touch commands.txt
+marydews@marys-Air basic_repo %   
